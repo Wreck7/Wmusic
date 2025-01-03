@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.bg-black{
+    background-color: #191414;
+}
+.bg-grey{
+    background-color: #1f1f1f;
+}
+.rounded{
+    border-radius: 10px;
+}
+.m-1{
+    margin: 10px 15px;
+}
+.p-1{
+    padding: 10px;
+}
+.invert{
+    filter: brightness(0) invert(1);
+}
