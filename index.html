@@ -4,28 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wmusic</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/utility.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container flex justify-center bg-black">
       <div class="left">
+        <img src="/img/close.svg" class="invert close" alt="">
         <div class="home bg-grey rounded m-1">
-          <div>
-            <img src="/logo.svg" alt="Spotify Logo" class="logo" />
+          <div class="wMusic">
+            <img src="/img/w.svg" alt="W logo" class="w" />
+            <img src="/img/w.svg" alt="music logo" class="m" />
           </div>
           <ul>
-            <li class="flex"><img src="/home.svg" alt="home icon" />Home</li>
+            <li class="flex"><img src="/img/home.svg" alt="home icon" />Home</li>
             <li class="flex">
-              <img src="/search.svg" alt="search icon" />Search
+              <img src="/img/search.svg" alt="search icon" />Search
             </li>
           </ul>
         </div>
         <div class="library bg-grey rounded m-1 p-1">
           <div class="heading flex items-center">
-            <img src="/library.svg" alt="files icon" class="logo" />
+            <img src="/img/library.svg" alt="files icon" class="logo" />
             <p>Your Library</p>
+          </div>
+          <div class="songList">
+            <ul>
+
+            </ul>
           </div>
           <div class="footer">
             <div>
@@ -62,7 +75,8 @@
       <div class="right bg-grey rounded">
         <div class="header">
           <div class="nav">
-            <svg
+            <img class="hamburger invert" src="/img/hamburger.svg" alt="">
+            <svg class="arrows"
               xmlns="http://www.w3.org/2000/svg"
               width="20px"
               height="20px"
@@ -75,7 +89,7 @@
                 fill="#ffffff"
               />
             </svg>
-            <svg
+            <svg class="arrows"
               xmlns="http://www.w3.org/2000/svg"
               width="20px"
               height="20px"
@@ -90,38 +104,35 @@
             </svg>
           </div>
           <div class="buttons">
-            <button>Sign up</button>
-            <button>Log in</button>
+            <button class="sBtn">Sign up</button>
+            <button class="lBtn">Log in</button>
           </div>
         </div>
         <div class="spotifyPlaylists">
-            <h2>Spotify Playlists</h2>
-            <div class="cardContainer">
-                <div class="card">
-                    <div class="play">
-                        <i class="fa-solid fa-play invert"></i>
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d" alt="">
-                    <h4>Happy Hits</h4>
-                    <p>Hits to boost your mood and fill you with happpiness!</p>
-                </div>
-                <div class="card">
-                    <div class="play">
-                        <i class="fa-solid fa-play invert"></i>
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d" alt="">
-                    <h4>Happy Hits</h4>
-                    <p>Hits to boost your mood and fill you with happpiness!</p>
-                </div>
-                <div class="card">
-                    <div class="play">
-                        <i class="fa-solid fa-play invert"></i>
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d" alt="">
-                    <h4>Happy Hits</h4>
-                    <p>Hits to boost your mood and fill you with happpiness!</p>
-                </div>
+          <h2>W Playlists</h2>
+          <div class="cardContainer">
+            
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="aboveBar">
+            <div class="songInfo"></div>
+            <div class="songBtn">
+              <img src="/img/prevsong.svg" alt="prev" class="invert" id="prev" />
+              <img src="/img/play.svg" alt="play" class="invert" id="play" />
+              <img src="/img/nextsong.svg" alt="next" class="invert" id="next" />
             </div>
+            <div class="timevol">
+            <div class="songTime">00:00/00:00</div>
+            <div class="volume invert">
+              <img src="/img/volume.svg" alt="">
+              <input type="range" name="volRange" id="range">
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
